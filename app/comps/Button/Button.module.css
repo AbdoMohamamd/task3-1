@@ -1,0 +1,9 @@
+.closeMenuBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1em;
+    
+}

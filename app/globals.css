@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../public/fonts/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: Helvetica-bold;
+    src: url(../public/fonts/Helvetica-Bold.ttf);
+}
+
+:root {
+    --primary-color: white;
+    --text-color: black;
+    --hover-color: lightgrey;
+    --button-color: #0056b3;
+    --button-hover-color: #0e4988;
+    --background-color: #0056b3;
+    --font-size-body: 2em;
+    --font-size-header: 3em;
+    --main-margin: 3em
+}
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+
+}

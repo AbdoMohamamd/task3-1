@@ -2,10 +2,13 @@
 
 import React from 'react'
 import Image from 'next/image'
-const Button = ({id,label,icon,onClick}) => {
+import style from '../Button/Button.module.css'
+const Button = ({ id, label, icon, onClick }) => {
   return (
-  <button id={id} onClick={onClick} >{label}
-  <Image src={icon} width={23} height={23} alt='logo'/></button>
+    <button id={id} onClick={onClick} className={style.closeMenuBtn}>
+      {label}
+      <Image src={icon} width={23} height={23} alt='logo' />
+    </button>
   )
 }
 
