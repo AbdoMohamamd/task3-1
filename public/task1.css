@@ -1,0 +1,376 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(fonts/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: Helvetica-bold;
+    src: url(fonts/Helvetica-Bold.ttf);
+}
+
+:root {
+    --primary-color: white;
+    --text-color: black;
+    --hover-color: lightgrey;
+    --button-color: #0056b3;
+    --button-hover-color: #0e4988;
+    --background-color: #0056b3;
+    --font-size-body: 2em;
+    --font-size-header: 3em;
+    --main-margin: 3em
+}
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+
+}
+
+
+
+.navbar {
+    display: flex;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 3em;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+}
+
+.logo:hover {
+
+    background-color: var(--hover-color);
+
+}
+
+.logo img {
+    width: 3em;
+    object-fit: cover;
+}
+
+
+.menu {
+
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+   max-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.menu ul{
+    
+ margin: 3em 0em;
+   list-style: none;
+}
+.menu ul li{
+   
+text-align: end;
+    
+}
+.menu ul li a{
+    padding: 0;
+    margin: auto;
+    
+}
+.close-menu-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1em;
+    
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 0em;
+    color: var(--text-color);
+
+}
+
+.menu a:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+
+}
+
+.show-menu-btn {
+
+cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+
+}
+
+.banner {
+    display: flex;
+   height: 100vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.banner h1 {
+    color: white;
+    font-family: Helvetica-bold;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+.banner p {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.menu-show {
+    display: flex;
+}
+
+.primary-button {
+    display: block;
+    background-color: var(--primary-color);
+    border: transparent;
+    width: 7em;
+    padding: 1em;
+    margin: 0.5em auto;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+}
+
+.primary-button:hover {
+    background-color: var(--hover-color);
+}
+
+.img-section {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.img-section div {
+    margin-bottom: 1em;
+
+}
+
+.img-section img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.img-section p {
+    font-weight: bold;
+    padding: 1em;
+
+}
+
+#form-section {
+    max-width: 20em;
+    margin: 1em auto;
+    padding: 1em;
+
+
+
+}
+
+
+#form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+
+}
+
+input {
+
+    padding: 0.5em;
+    margin-bottom: 2vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5vh;
+}
+
+.submit-button {
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+
+.submit-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+padding: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo-container {
+    display: inline;
+    width: 1.5em
+
+}
+
+.footer-logo-container img {
+    width: 1.5em;
+    margin: auto;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu a {
+    margin: auto 1em;
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.6rem;
+
+}
+
+.footer-menu a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.social-media {
+    width: 2.6em;
+    display: flex;
+   
+ 
+}
+
+.social-media-icons {
+    width: 100%;
+    margin: auto;
+}
+
+.social-media-icons img {
+    width: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        padding: 0 6em;
+    }
+
+    .show-menu-btn {
+
+        display: none;
+
+    }
+
+    .menu {
+
+        display: flex;
+        position: static;     
+        flex-direction: row;
+        justify-content: end;
+
+    }
+   
+    .menu ul{
+        display: none;
+       
+    }
+
+    .menu li {
+
+        padding: auto;
+    }
+
+    .menu a {
+        padding: 1.9em 1em;
+        
+       
+    }
+
+
+
+    .img-section {
+        display: flex;
+
+
+
+    }
+
+    .img-section div {
+        width: 100%;
+        border: 0.2em solid white;
+    }
+
+    .footer-logo-container {
+        width: 2em;
+    }
+
+    .footer-logo-container img {
+        width: 2em;
+    }
+
+    .footer-menu a {
+      
+        font-size: 0.9rem;
+    
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+}

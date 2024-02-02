@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+
+}
+
+.form input[type='text'] {
+
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5em;
+}
+.form input[type='email'] {
+
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5em;
+}
+.submitButton {
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+
+.submitButton:hover {
+    background-color: var(--button-hover-color);
+}
