@@ -6,7 +6,7 @@ import logo from '../../../public/logo.png'
 import style from '../Menu/Menu.module.css'
 const Menu = ({show}) => {
   return (
-    <ul className={`${style.menu} ${show?style.showMenu:""}` } id='menu'>
+    <ul className={`${style.menu} ${show?style.showMenu:""}` } >
       <ul>
      
         <li>
