@@ -84,6 +84,7 @@
         position: static;
         flex-direction: row;
         justify-content: end;
+        width: 75em;
         /* transition: transform 0s ease-in; */
 
     }

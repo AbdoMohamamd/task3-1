@@ -24,7 +24,7 @@
 
 .change {
     position: fixed;
-right: 5%;
+    right: 5%;
 }
 
 .change .bar1 {
@@ -41,10 +41,11 @@ right: 5%;
 
 
 @media screen and (min-width: 600px) {
-    .navbar div {
-        width: 37em;
-    }
-    .icon{
+    .container {
+        width: 100%;
+    justify-content: center;}
+
+    .icon {
         display: none;
     }
 
