@@ -7,11 +7,12 @@ import Twitter from '../../../public/twitter.jpg'
 import Facebook from '../../../public/facebook.png'
 const Footer = () => {
   return (
-    <footer className={style.footer}>
+    <footer className={`${style.footer} p-3`}>
       <div className={style.footerLogoContainer}>
         {' '}
         <Link href='/'>
           <Image
+            loading={'eager'}
             src={Logo}
             className={style.footerLogo}
             width={40}
@@ -21,7 +22,6 @@ const Footer = () => {
         </Link>
       </div>
       <div className={style.footerMenu}>
-       
         <Link href='/'>Home</Link>
         <Link href='/'>About Us</Link>
         <Link href='/'>Contact Us</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
 
       <div className={style.socialMedia}>
         <Link href='/' target='_blank' className={style.socialMediaIcons}>
-          <Image src={Facebook} width={20} height={20} />
+          <Image src={Facebook} width={20} height={20} alt='facebook' />
         </Link>
         <Link href='/' target='_blank' className={style.socialMediaIcons}>
           <Image src={Twitter} alt='Twitter' width={20} height={20} />

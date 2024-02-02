@@ -6,8 +6,8 @@ const PhotoWithText = ({img,text}) => {
   return (
    
   
-    <div className={style.img}><Image src={img} alt="Image1" width={400} height={400} /> 
-        <p className={style.text}>{text}</p>
+    <div className={`${style.img} mb-2  `}><Image  className={'rounded-xl'} src={img} alt="Image1" width={350} height={350} /> 
+        <p className={`${style.text} p-2 font-bold`}>{text}</p>
     </div>
  
   )

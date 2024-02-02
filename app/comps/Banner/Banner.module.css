@@ -5,33 +5,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 1em;
+   
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
 }
 
-.banner h1 {
-    color: white;
-    font-family: Helvetica-bold;
-    font-size: 3rem;
-   
-}
-
-.banner p {
-    margin-bottom: 0.6em;
-    color: white;
-    font-size: 1.5rem;
-
-}
-
-@media screen and (max-width: 250px) {
-    .banner h1 {
-        font-size: 2rem;
-    }
-
-    .banner p {
-        font-size: 1rem;
-    }
-}

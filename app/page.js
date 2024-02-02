@@ -14,7 +14,7 @@ export default function Home () {
     imgSectionRef.current.scrollIntoView({
       behavior: 'smooth'
     })
-    console.log(1)
+ 
   }
   return (
     <div>
