@@ -14,7 +14,7 @@ const NavBar = () => {
     <nav>
       <div
         className={
-          'w-11/12 flex m-auto justify-between items-center md:justify-center'
+          'min-w p-2 flex m-auto justify-between items-center md:justify-center md:min-w'
         }
       >
         <Link
@@ -57,9 +57,7 @@ const NavBar = () => {
           ></div>
           <div
             className={`${
-              isMenuOpen
-                ? 'opacity-0'
-                : ''
+              isMenuOpen ? 'opacity-0' : ''
             }  ${'w-8 h-1 bg-gray-800 mt-2 mb-2 transition-all duration-400 '}`}
           ></div>
           <div

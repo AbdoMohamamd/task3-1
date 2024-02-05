@@ -10,9 +10,9 @@ module.exports = {
       backgroundImage: {
         banner: "url('../public/banner.jpg')"
       },
-      width:{
-100:'70em',
-99:'45em'
+      width: {
+        100: '70em',
+        99: '45em'
       }
     }
   },
