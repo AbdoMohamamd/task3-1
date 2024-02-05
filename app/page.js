@@ -1,7 +1,4 @@
 'use client'
-import Menu from '../app/comps/Menu/Menu'
-import NavBar from './comps/NavBar/NavBar'
-import Button from './comps/Button/Button'
 import Banner from './comps/Banner/Banner'
 import PhotoWithText from './comps/PhotoWithText/PhotoWithText'
 import img1 from '../public/img1.jpg'
