@@ -17,7 +17,7 @@ export default function Home () {
   }
   return (
     <div>
-      <Banner startNow={startNow} />
+      <Banner title={"Welcome to the home page"} phrase={"This is the main page of the website"} background={"bg-banner"} startNow={startNow} />
       <section
         className='w-56 block mt-0 mb-0 mx-auto text-center md:flex md:justify-center md:w-99'
         ref={imgSectionRef}

@@ -14,7 +14,7 @@ const NavBar = () => {
     <nav>
       <div
         className={
-          'min-w p-2 flex m-auto justify-between items-center md:justify-center md:min-w'
+          'min-w p-2 flex m-auto justify-between items-center md:justify-center md:min-w md:p-0'
         }
       >
         <Link

@@ -46,7 +46,7 @@ const Menu = ({ show }) => {
 
       <li className='text-center'>
         <Link
-          href='/'
+          href='/AboutUs'
           className='max-w-full p-8  text-black block hover:bg-gray-200'
         >
           About Us
@@ -54,7 +54,7 @@ const Menu = ({ show }) => {
       </li>
       <li className='text-center'>
         <Link
-          href='/'
+          href='/ContactUs'
           className='max-w-full p-8  text-black block hover:bg-gray-200'
         >
           Contact Us
