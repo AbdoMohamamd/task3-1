@@ -43,14 +43,7 @@ const Menu = ({ show }) => {
           Home
         </Link>
       </li>
-      <li className='text-center'>
-        <Link
-          href='/'
-          className='max-w-full p-8 text-black block hover:bg-gray-200'
-        >
-          Profile
-        </Link>
-      </li>
+
       <li className='text-center'>
         <Link
           href='/'
@@ -65,14 +58,6 @@ const Menu = ({ show }) => {
           className='max-w-full p-8  text-black block hover:bg-gray-200'
         >
           Contact Us
-        </Link>
-      </li>
-      <li className='text-center'>
-        <Link
-          href='/'
-          className='max-w-full p-8  text-black block hover:bg-gray-200'
-        >
-          Login
         </Link>
       </li>
     </ul>
