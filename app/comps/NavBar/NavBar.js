@@ -6,20 +6,20 @@ import style from './NavBar.module.css'
 import Image from 'next/image'
 import logo from '../../../public/logo.png'
 import { useState } from 'react'
-import { useRef } from 'react'
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false)
-  const iconRef = useRef(null)
- 
+
   return (
-    <nav className={style.navbar}>
-      <div className={style.container}>
+    <nav>
+      <div
+        className={
+          'w-11/12 flex m-auto justify-between items-center md:justify-center'
+        }
+      >
         <Link
           href='/'
-          className={`${
-            style.logo
-          } ${'m-2 rounded-full bg-white hover:bg-gray-300 p-1'}`}
+          className='m-2 rounded-full bg-white hover:bg-gray-300 p-1'
         >
           <Image
             src={logo}
@@ -41,16 +41,34 @@ const NavBar = () => {
           backgroundColor={true}
         /> */}
         <div
-          className={style.icon}
+          className={`${
+            isMenuOpen ? 'fixed right-5' : ''
+          }   ${'inline cursor-pointer  md:hidden'}`}
           onClick={() => {
             setMenuOpen(!isMenuOpen)
-            iconRef.current.classList.toggle(style.change)
           }}
-          ref={iconRef}
         >
-          <div className={style.bar1} ></div>
-          <div className={style.bar2} ></div>
-          <div className={style.bar3} ></div>
+          <div
+            className={`${
+              isMenuOpen
+                ? 'transition-transform transform translate-y-[12px] translate-x-[0px]  rotate-[-45deg]'
+                : ''
+            }  ${'w-8 h-1 bg-gray-800 mt-2 mb-2 transition-all duration-400 '}`}
+          ></div>
+          <div
+            className={`${
+              isMenuOpen
+                ? 'opacity-0'
+                : ''
+            }  ${'w-8 h-1 bg-gray-800 mt-2 mb-2 transition-all duration-400 '}`}
+          ></div>
+          <div
+            className={`${
+              isMenuOpen
+                ? 'transition-transform transform translate-y-[-12px] translate-x-[0px] rotate-[45deg]'
+                : ''
+            }  ${'w-8 h-1 bg-gray-800 mt-2 mb-2 transition-all duration-400 '}`}
+          ></div>
         </div>
       </div>
     </nav>

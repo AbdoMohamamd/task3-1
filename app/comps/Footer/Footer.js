@@ -7,31 +7,56 @@ import Twitter from '../../../public/twitter.jpg'
 import Facebook from '../../../public/facebook.png'
 const Footer = () => {
   return (
-    <footer className={`${style.footer} p-3`}>
-      <div className={style.footerLogoContainer}>
+    <footer
+      className={
+        'p-3 flex w-full justify-around shadow-[0px_0px_10px_rgba(0,0,0,0.5)]  '
+      }
+    >
+      <div className={'inline w-10  md:w-12  '}>
         {' '}
         <Link href='/'>
           <Image
             loading={'eager'}
             src={Logo}
-            className={style.footerLogo}
-            width={40}
-            height={40}
+            className={'mx-auto '}
+            width={50}
+            height={50}
             alt='Footer Logo'
           />
         </Link>
       </div>
-      <div className={style.footerMenu}>
-        <Link href='/'>Home</Link>
-        <Link href='/'>About Us</Link>
-        <Link href='/'>Contact Us</Link>
+      <div className={'flex'}>
+        <Link
+          href='/'
+          className={
+            ' block mt-auto mb-auto mr-4 ml-4 hover:text-gray-400 hover:underline sm:text-xs'
+          }
+        >
+          Home
+        </Link>
+        <Link
+          href='/'
+          className={
+            ' block mt-auto mb-auto mr-4 ml-4 hover:text-gray-400 hover:underline sm:text-xs'
+          }
+        >
+          About Us
+        </Link>
+        <Link
+          href='/'
+          className={
+            ' block mt-auto mb-auto mr-4 ml-4 hover:text-gray-400 hover:underline sm:text-xs'
+          }
+        >
+          Contact Us
+        </Link>
       </div>
 
-      <div className={style.socialMedia}>
-        <Link href='/' target='_blank' className={style.socialMediaIcons}>
+      <div className={'flex'}>
+        <Link href='/' target='_blank' className={'m-auto'}>
           <Image src={Facebook} width={20} height={20} alt='facebook' />
         </Link>
-        <Link href='/' target='_blank' className={style.socialMediaIcons}>
+        <Link href='/' target='_blank' className={'m-auto'}>
           <Image src={Twitter} alt='Twitter' width={20} height={20} />
         </Link>
       </div>

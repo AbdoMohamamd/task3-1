@@ -13,7 +13,7 @@
     src: url(../public/fonts/Helvetica-Bold.ttf);
 }
 
-:root {
+/* :root {
     --primary-color: white;
     --text-color: black;
     --hover-color: lightgrey;
@@ -23,7 +23,7 @@
     --font-size-body: 2em;
     --font-size-header: 3em;
     --main-margin: 3em
-}
+} */
 
 .helvetica-bold {
     font-family: Helvetica-bold;
@@ -31,7 +31,7 @@
 
 
 
-* {
+ * {
 
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@
     font-family: Helvetica;
 
 }
-
+/*
 .img-section {
     width: 80%;
     display: block;
@@ -69,4 +69,4 @@
 
 
 
-}
+} */
