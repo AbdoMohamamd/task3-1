@@ -1,16 +1,26 @@
 import React from 'react'
 import style from './Form.module.css'
-const Form = () => {
+const Form = ({title}) => {
   return (
     <form className={'flex flex-col items-center' }>
-      <h2 className={'mb-2 font-bold text-2xl  text-center'}>This is my form</h2>
-      <label htmlFor='name' className={'mb-3 text-1xl w-full'}>
-        Name:
+      <h2 className={'mb-2 font-bold text-2xl  text-center'}>{title}</h2>
+      <label htmlFor='firstName' className={'mb-3 text-1xl w-full'}>
+      First Name:
       </label>
       <input
         type='text'
-        id='name'
-        name='name'
+        id='firstName'
+        name='firstName'
+        required
+        className={'p-2 mb-4 rounded-xl w-full border border-gray-400 border-solid' }
+      />
+        <label htmlFor='lastName' className={'mb-3 text-1xl w-full'}>
+       Last Name:
+      </label>
+          <input
+        type='text'
+        id='lastName'
+        name='lastName'
         required
         className={'p-2 mb-4 rounded-xl w-full border border-gray-400 border-solid' }
       />
