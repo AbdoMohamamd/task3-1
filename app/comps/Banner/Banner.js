@@ -1,7 +1,14 @@
 'use client'
 import React from 'react'
 import Button from '../Button/Button'
-const Banner = ({ title,phrase,background, startNow }) => {
+const Banner = ({ title,phrase,background,sectionRef }) => {
+
+  const startNow = () => {
+    sectionRef.current.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <section
       className={'mb-4 flex flex-col h-screen justify-center  bg-cover  bg-center text-center bg-no-repeat '+background }

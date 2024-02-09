@@ -35,7 +35,7 @@ const Footer = () => {
           Home
         </Link>
         <Link
-          href='/'
+          href='/AboutUs'
           className={
             ' block mt-auto mb-auto mr-4 ml-4 hover:text-gray-400 hover:underline sm:text-xs'
           }
@@ -43,7 +43,7 @@ const Footer = () => {
           About Us
         </Link>
         <Link
-          href='/'
+          href='/ContactUs'
           className={
             ' block mt-auto mb-auto mr-4 ml-4 hover:text-gray-400 hover:underline sm:text-xs'
           }

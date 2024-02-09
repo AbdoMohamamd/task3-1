@@ -11,11 +11,6 @@ export default function Home () {
     <PhotoWithText img={img2} text={'Rocks at the beach'} />
   ]
   const imgSectionRef = useRef(null)
-  const startNow = () => {
-    imgSectionRef.current.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
 
   return (
     <div>
@@ -23,17 +18,16 @@ export default function Home () {
         title={'Welcome to the home page'}
         phrase={'This is the main page of the website'}
         background={'bg-banner'}
-        startNow={startNow}
+        sectionRef={imgSectionRef}
       />
       <section
         className='w-56 block mt-0 mb-0 mx-auto text-center md:flex md:justify-center md:w-99'
         ref={imgSectionRef}
       >
-{cards}
-
+        {cards}
       </section>
       <section className='max-w-96 my-4 mx-auto p-4'>
-        <Form title={"This is my form"} />
+        <Form title={'This is my form'} />
       </section>
     </div>
   )
