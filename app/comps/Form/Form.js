@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Form.module.css'
+
 const Form = ({title}) => {
   return (
     <form className={'flex flex-col items-center' }>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import style from './PhotoWithText.module.css'
+
 const PhotoWithText = ({img,text}) => {
     
   return (

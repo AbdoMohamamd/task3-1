@@ -2,7 +2,7 @@
 import React from 'react'
 import Menu from '../Menu/Menu'
 import Link from 'next/link'
-import style from './NavBar.module.css'
+
 import Image from 'next/image'
 import logo from '../../../public/logo.png'
 import { useState } from 'react'

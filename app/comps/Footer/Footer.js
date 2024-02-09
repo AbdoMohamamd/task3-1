@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Footer.module.css'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../../public/logo.png'

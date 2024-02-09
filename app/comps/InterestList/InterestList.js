@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useRef } from 'react'
 import RadioInput from '../RadioInput/RadioInput.js'
-import Button from '../Button/Button.js'
+
 
 const IndexPage = () => {
   const [selectedOption, setSelectedOption] = useState(-1)
