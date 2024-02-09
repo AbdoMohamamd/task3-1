@@ -7,8 +7,8 @@ import { useRef } from 'react'
 import Form from './comps/Form/Form'
 export default function Home () {
   let cards = [
-    <PhotoWithText img={img1} text={'Waves art'} />,
-    <PhotoWithText img={img2} text={'Rocks at the beach'} />
+    <PhotoWithText img={img1} text={'Waves art'} key={1} />,
+    <PhotoWithText img={img2} text={'Rocks at the beach'} key={2} />
   ]
   const imgSectionRef = useRef(null)
 

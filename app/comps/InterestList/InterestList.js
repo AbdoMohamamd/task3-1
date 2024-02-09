@@ -36,10 +36,10 @@ const IndexPage = () => {
       </h2>
       <ul>
         {options.map((option, index) => (
-          <li>
+          <li key={index}>
             <RadioInput
               name='options'
-              key={index}
+              
               value={index}
               label={option}
               onChange={handleRadioChange}

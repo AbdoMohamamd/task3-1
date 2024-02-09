@@ -5,11 +5,11 @@ import PhotoWithText from '../comps/PhotoWithText/PhotoWithText'
 import img1 from '../../public/img1.jpg'
 import img2 from '../../public/img2.jpg'
 
-const page = () => {
+const Page = () => {
 const imgSectionRef =useRef(null);
   let cards = [
-    <PhotoWithText img={img1} text={'Waves art'} />,
-    <PhotoWithText img={img2} text={'Rocks at the beach'} />
+    <PhotoWithText img={img1} text={'Waves art'} key={1} />,
+    <PhotoWithText img={img2} text={'Rocks at the beach'} key={2} />
   ]
   return (
     <div>
@@ -31,4 +31,4 @@ const imgSectionRef =useRef(null);
   )
 }
 
-export default page
+export default Page

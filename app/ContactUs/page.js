@@ -4,7 +4,7 @@ import Banner from '../comps/Banner/Banner'
 import Form from '../comps/Form/Form'
 import InterestList from '../comps/InterestList/InterestList'
 
-const page = () => {
+const Page = () => {
   const formSectionRef = useRef(null)
   return (
     <div>
@@ -28,4 +28,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
