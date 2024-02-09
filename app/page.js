@@ -6,9 +6,9 @@ import img2 from '../public/img2.jpg'
 import { useRef } from 'react'
 import Form from './comps/Form/Form'
 export default function Home () {
-  let cards = [
-    <PhotoWithText img={img1} text={'Waves art'} key={1} />,
-    <PhotoWithText img={img2} text={'Rocks at the beach'} key={2} />
+  const cards = [
+    { img: img1, text: 'Waves art' },
+    { img: img2, text: 'Rocks at the beach' }
   ]
   const imgSectionRef = useRef(null)
 
@@ -24,7 +24,9 @@ export default function Home () {
         className='w-56 block mt-0 mb-0 mx-auto text-center md:flex md:justify-center md:w-99'
         ref={imgSectionRef}
       >
-        {cards}
+          {cards.map((card, index) => (
+  <PhotoWithText img={card.img} text={card.text} key={index} />
+))}
       </section>
       <section className='max-w-96 my-4 mx-auto p-4'>
         <Form title={'This is my form'} />

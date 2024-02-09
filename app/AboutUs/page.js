@@ -1,16 +1,17 @@
 'use client'
-import React,{useRef} from 'react'
+import React, { useRef } from 'react'
 import Banner from '../comps/Banner/Banner'
 import PhotoWithText from '../comps/PhotoWithText/PhotoWithText'
 import img1 from '../../public/img1.jpg'
 import img2 from '../../public/img2.jpg'
 
 const Page = () => {
-const imgSectionRef =useRef(null);
-  let cards = [
-    <PhotoWithText img={img1} text={'Waves art'} key={1} />,
-    <PhotoWithText img={img2} text={'Rocks at the beach'} key={2} />
+  const imgSectionRef = useRef(null)
+  const cards = [
+    { img: img1, text: 'Waves art' },
+    { img: img2, text: 'Rocks at the beach' }
   ]
+
   return (
     <div>
       {' '}
@@ -22,11 +23,12 @@ const imgSectionRef =useRef(null);
       />
       <section
         className='w-56 block mt-0 mb-0 mx-auto text-center md:flex md:justify-center md:w-99'
-         ref={imgSectionRef}
+        ref={imgSectionRef}
       >
-        {cards}
+       {cards.map((card, index) => (
+  <PhotoWithText img={card.img} text={card.text} key={index} />
+))}
       </section>
-    
     </div>
   )
 }
